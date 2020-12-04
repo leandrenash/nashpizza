@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nash Pizza</title>
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+
+    <body>
+
+        <div class="orderpage" id="orderpage">
+
+            <div class="orderpagebackground">
+
+                <nav>
+
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+
+                    </div>
+
+                    <div class="hamburger-open">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+
+                    </div>
+
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="order.html">Order</a></li>
+                        <li><a href="about.html">About Us</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            <form action="submit">
+
+                <div class="form">
+
+                    <div class="row order">
+
+                        <div class="size col-sm-3">
+
+                            <h4>Size :</h4>
+
+                            <label for="large"><input type="radio" name="size" id="large" value="large" checked>
+                                Large
+                            </label>
+
+                            <label for="medium"> <input type="radio" name="size" id="medium" value="medium"> Medium</label>
+
+                            <label for="small"> <input type="radio" name="size" id="small" value="small"> Small</label>
+
+                        </div>
+
+                        <div class="topping col-sm-3">
+                            <h4>Topping :</h4>
+
+                            <label for="Pepperoni"><input type="radio" name="Topping" id="Pepperoni" value="Pepperoni"
+                                    checked> Pepperoni
+                            </label>
+
+                            <label for="Mushrooms"><input type="radio" name="Topping" id="Mushrooms" value="Mushrooms">
+                                Mushrooms
+                            </label>
+
+                            <label for="Cheese"><input type="radio" name="Topping" id="Cheese" value="Cheese">
+                                Cheese
+                            </label>
+
+
+                            <label for="Tamatoes"><input type="radio" name="Topping" id="Tamatoes" value="Tamatoes">
+                                Tomatoes
+                            </label>
+
+
+                            <label for="Beef"><input type="radio" name="Topping" id="Beef" value="Beef">
+                                Beef
+                            </label>
+
+                        </div>
+
+                        <div class="crust col-sm-3">
+
+                            <h4>Crust :</h4>
+
+                            <label for="Sicilian"><input type="radio" name="Crust" id="Sicilian" value="Sicilian" checked>
+                                Sicilian
+                            </label>
+
+                            <label for="Neapolitan"><input type="radio" name="Crust" id="Neapolitan" value="Neapolitan">
+                                Neapolitan
+                            </label>
+
+                            <label for="Chicago Deep Dish"><input type="radio" name="Crust" id="Chicago Deep Dish"
+                                    value="Chicago Deep Dish"> Chicago Deep Dish
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="deliver">
+
+                        <h5>Would you like your order to be delivered to your home?</h5>
+
+                        <select name="deliver" id="deliver">
+
+                            <option value="Yes">Yes</option>
+
+                            <option value="No">No</option>
+
+                        </select>
+
+                    </div>
+
+                    <div id="calculator">
+
+                        <p></p>
+
+                    </div>
+
+                    <div class="row formsubmit">
+
+                        <div class="col-2 btn">
+
+                            <p id="checkout"> <a href="#orders">check out </a></p>
+
+                        </div>
+
+                        <div class="col-2 btn" id="viewcart">
+
+                            <button type="submit">
+
+                                Add to cart
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="cartpage">
+
+            <div class="cartoverlay">
+
+
+            </div>
+
+            <div class="cartnav">
+
+                <p><a href="#orderpage">Go back to orders</a></p>
+
+            </div>
+
+            <div class="orders">
+
+                <ol id="orders">
+
+                </ol>
+
+            </div>
+
+            <div id="totals">
+
+                <h6>Total: <span></span> </h6>
+
+            </div>
+
+            <div class="buy">
+
+                <input class="btn-success" type="button" value="Buy">
+
+            </div>
+
+
+            <form action="submit" class="deliveryform">
+
+                <label for="City">City/Town:<input type="text" id="City"></label>
+
+                <label for="Street">Street:<input type="text" id="Street"></label>
+
+                <label for="Building">Building:<input type="text" id="Building"></label>
+
+                <label for="address">Address:<input type="address" id="address"></label>
+
+                <input type="button" value="submit" id="submit">
+
+
+            </form>
+
+        </div>
+
+
+
+
+    </body>
+
+    <script src="./js/jquery-3.5.1.js"></script>
+
+    <script src="./js/main.js"></script>
+
+</html>

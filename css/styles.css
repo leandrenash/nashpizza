@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+body{
+    font-family: 'Satisfy', cursive;
+     overflow-x: hidden; 
+     width: 100%;
+} 
+
+
+nav{
+    height: 10vh;
+    position: relative;
+    font-size: 50px;
+}
+
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    right: 4%;
+    top: 50%;
+    transform: translate(-4%, -50%);
+
+}
+
+
+.hamburger-open{
+    position: absolute;
+    cursor: pointer;
+    right: 4%;
+    top: 50%;
+    transform: translate(-4%, -50%);
+    color: blue;
+    z-index: 2;
+    transition: 1s ease-out;
+    display: none;
+}
+
+
+.hamburger-open .line{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+
+.line{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+
+.nav{
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    position: fixed;
+    background-color: chocolate;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(0px at 95% 0%);
+    -webkit-clip-path:circle(0px at 100% 0%);
+    transition: all 1s ease-out;
+}
+
+
+.nav li a{
+ color: white;
+}
+
+
+
+.open{
+    clip-path: circle(2000px at 95% 0%);
+    -webkit-clip-path:circle(2000px at 95% 0%);
+
+}
+
+
+.landing {
+    text-align: center;
+}
+
+
+.landing h1{
+     margin-top: 5%;
+     font-size: 76px;
+}
+
+
+.landing p{
+    margin-top: 40%;
+    font-size: 36px;
+}
+
+
+.landingpage{
+    color: white;
+    height: 100vh;
+    background-image: url(../Images/landing\ page\ background.jpg);
+    background-size: cover;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.buttons h6{
+    margin: 20% 10%;
+    background-color: #28a745;
+    width: 20%;
+    height: 3vh;
+    padding: 0.5%;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.buttons h6 a{
+    color: white;
+}
+
+
+.buttons h6 a :hover {
+  text-decoration: none;
+}
+
+
+.orderpagebackground{
+   
+    height: 40vh;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../Images/Order\ page\ background.jpg);
+}
+
+
+.col-sm-3{
+    display: flex;
+    flex-direction: row;
+    margin: 2% 1%;
+}
+
+
+.col-sm-3 label{
+    margin-left: 6%;
+}
+
+
+.order{
+    margin-left: 0%;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.deliver{
+    margin-top: 2vh;
+    text-align: center;
+    
+}
+
+
+select{
+    width: 10%;
+}
+
+
+.formsubmit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.formsubmit .col-2{
+    margin: 2% 16%;
+}
+
+
+#viewcart button{
+    width: 120px;
+}
+
+
+#checkout {
+    width: 120px;
+}
+
+
+#calculator{
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+.cartpage{
+    position: absolute;
+    top: 100vh;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/cartpage\ background.jpg);
+    background-size: cover;
+    
+}
+
+
+.cartoverlay{
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+
+}
+
+
+.orders{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+
+#orders{
+    font-size: 24px;
+}
+
+
+.buy{
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+    width: 20%;
+    
+}
+
+
+.buy .btn-success{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.cartnav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+}
+
+
+.cartnav p a{
+    margin-left: 65%;
+    position: relative;
+    top: 5vh;
+    color: white;
+}
+
+
+.aboutuspage nav{
+    background-color: chocolate;
+}
+
+
+.aboutus{
+ padding: 10% 20%;
+ line-height: 30px;
+}
+
+
+#totals{
+    color: white;
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+}
+
+
+.deliveryform{
+    padding: 1% 5%;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+    position: absolute;
+    bottom: 108vh;
+    display: flex;
+    flex-direction: column;
+    left: 10%;
+    width: 70%;
+    height: 50%;
+    background-color: antiquewhite;
+    display: none; 
+}
+
+
+.deliveryform label{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.deliveryform #submit{
+  width: 50%;
+  height: 4vh;
+  margin-left: 30%;
+}
+
+@media screen and (min-width:740px){
+
+    .buttons h6{
+        margin: 5% 2%;
+        height: 4.5vh;
+        width: 10%;
+        font-size: 24px;
+        
+    }
+
+    .landing p{
+        margin-top: 7%;
+    }
+
+
+    #viewcart button{
+       width: 100%;
+    }
+
+
+    #checkout {
+        width: 100%;
+    }
+
+
+    .orders{
+    
+        left: 35%;
+    }
+
+
+    .cartnav p a{
+        margin-left: 80%;
+        font-size: 24px;
+    }
+
+
+    .buy{
+        width: 10%;
+        position: absolute;
+        left: 50%;
+        
+    }
+
+
+    #totals{
+        left: 50%;
+        
+    }
+
+
+    #totals h6{
+        font-size: 30px;
+    }
+
+
+    .cartpage{
+    
+        background-size: 100% 110%;
+        height: 100vh;
+        
+    }
+
+
+    .deliveryform{
+        padding: 1% 5%;  
+        bottom: 105vh;
+        left: 70%;
+        width: 25%;
+        
+    
+        
+    }
+
+    .orderpagebackground{
+        height: 40vh;
+    }
+
+
+    .col-sm-3{
+        flex-direction: column;
+        margin: 2% 4%;
+    }
+
+
+
+    .order{
+        margin-left: 0%;
+    }
+
+
+    .col-sm-3 label{
+        margin-left: 0;
+    }
+
+}
